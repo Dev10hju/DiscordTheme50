@@ -101,7 +101,7 @@
    --button-background-active: #4d5f68;
    --button-accent: var(--accent-color);
    --button-accent-hover: #d2f3ff;
-   --button-accent-active: #c88df8;
+   --button-accent-active: #ffffff;
    --button-destructive: #fb7c7c;
    --button-destructive-hover: #ff929b;
    --button-destructive-active: #fa4a4a;
@@ -127,7 +127,7 @@
    --text-normal: #331254;
    --text-positive: var(--text-normal);
    --text-muted: #8495a7;
-   --text-link: #ffffff;
+   --text-link: #a015f0;
    --interactive-selected: var(--background-primary);
    --interactive-active: var(--text-normal);
    --interactive-normal: var(--text-normal);
