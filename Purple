@@ -144,16 +144,34 @@
    --activity-card-background: var(--background-1);
    --brand-experiment: var(--accent-color) !important;
    /* buttons */
-   --button-background: var(--background-1);
-   --button-background-hover: #dad3e1;
-   --button-background-active: #b1bcc8;
-   --button-accent: var(--accent-color);
-   --button-accent-hover: #7d22fd;
-   --button-accent-active: #690dc5;
-   --button-destructive: #fb7c7c;
-   --button-destructive-hover: #ff929b;
-   --button-destructive-active: #fa4a4a;
+    --button-background: #2a3439;
+    --button-background-hover: #354249;
+    --button-background-active: #4d5f68;
+    --button-accent: var(--accent-color);
+    --button-accent-hover: #d2f3ff;
+    --button-accent-active: #c88df8;
+    --button-text-color: var(--accent-color); /* Default text color */
+    --button-text-color-active: black; /* Text color when the button is active */
+    --button-destructive: #fb7c7c;
+    --button-destructive-hover: #ff929b;
+    --button-destructive-active: #fa4a4a;
  }
+  button {
+    background-color: var(--button-background);
+    color: var(--button-text-color); /* Use the default text color */
+  }
+
+  button:hover {
+    background-color: var(--button-background-hover);
+    color: var(--button-accent-hover);
+  }
+
+  button:active {
+    background-color: var(--button-background-active);
+    color: var(--button-text-color-active); /* Use the active text color */
+  }
+ 
+ 
  /*-----------DON'T CHANGE------------*/
  :root {
    --outdated-122: none !important;
