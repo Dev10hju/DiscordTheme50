@@ -81,11 +81,11 @@
    --text-muted: #6d8692;
    --text-link: #edf8fe;
    --interactive-selected: var(--background-primary);
-   --interactive-active: #000000;
-   --interactive-normal: var(--text-normal);
+   --interactive-active: #ff0000;
+   --interactive-normal: #f6ff00;
    --interactive-muted: var(--button-background-active);
    --channels-default: var(--text-muted);
-   --header-primary: var(--text-normal);
+   --header-primary: #00d5ff;
    --header-secondary: var(--text-muted);
    /* more */
    --settings-icon-color: #aa8ebc;
