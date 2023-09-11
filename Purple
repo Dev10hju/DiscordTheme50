@@ -38,7 +38,6 @@
    --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
    --border-radius-1: 10px;
    --border-radius-2: 8px;
-   --home-image: url('https://i.imgur.com/233d55Y.gif') !important;
  }
  /*-----------CUSTOM COLORS-----------*/
  /*-------------DARK MODE-------------*/
@@ -156,10 +155,6 @@
    --button-destructive-active: #fa4a4a;
  }
 
- div[data-list-item-id="guildsnav___home"] {
-   background: var(--home-image) top center/110% no-repeat;
- }
-
  /*-----------DON'T CHANGE------------*/
  :root {
    --outdated-122: none !important;
@@ -172,3 +167,13 @@
  .root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
    height: 240px;
  }
+
+ /*Home Button*/
+
+ .homeIcon-r0w4ny path {fill: transparent}
+
+ .homeIcon-r0w4ny {
+    background: url('https://media.giphy.com/media/4ilFRqgbzbx4c/source.gif') center/cover no-repeat;
+    min-width: 60px;
+    min-height: 60px;
+  }
