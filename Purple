@@ -155,6 +155,11 @@
    --button-destructive-hover: #ff929b;
    --button-destructive-active: #fa4a4a;
  }
+
+ div[data-list-item-id="guildsnav___home"] {
+   background: var(--home-image) top center/110% no-repeat;
+ }
+
  /*-----------DON'T CHANGE------------*/
  :root {
    --outdated-122: none !important;
