@@ -38,7 +38,7 @@
    --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
    --border-radius-1: 10px;
    --border-radius-2: 8px;
-   --home-image: url('https://i.imgur.com/233d55Y.gif');
+   --home-image: url('https://i.imgur.com/233d55Y.gif'); !important
  }
  /*-----------CUSTOM COLORS-----------*/
  /*-------------DARK MODE-------------*/
