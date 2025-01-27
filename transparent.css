@@ -10,26 +10,34 @@
     --accent: 37, 172, 232;
     --accent-alt: 29, 101, 134;
 }
-/* Apply transparent backgrounds with blur to necessary elements */
-body, .app, .container, .container-3baos1, .layer, .layer-3QrUeG {
+
+/* Create a base layer for the blur effect */
+.app-2rEoOp::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+/* Apply transparent backgrounds */
+.layers-3iHuyZ, .container-3w7J-x, .chat-3bRxxu, .container-1D34oG {
     background-color: var(--background-solid-dark) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
 }
-.sidebar, .sidebar-1tnWFu, .channels, .members, .content, .container-2o3qEW {
+
+.sidebar-2K8pFh, .members-1998pB, .channelTextArea-rNsIhG {
     background-color: var(--background-solid-darker) !important;
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
 }
-/* Additional transparency for specific elements */
-.header, .header-2Mx0tC, .title, .title-3FQ39c {
+
+.title-3qD0b-, .header-2V-4Sw {
     background-color: var(--background-solid) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
 }
+
 /* Remove existing background images */
-body, .app, .container, .container-3baos1, .layer, .layer-3QrUeG,
-.sidebar, .sidebar-1tnWFu, .channels, .members, .content, .container-2o3qEW,
-.header, .header-2Mx0tC, .title, .title-3FQ39c {
+body, .app-2rEoOp, .bg-h5JY_x {
     background-image: none !important;
 }
