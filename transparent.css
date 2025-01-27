@@ -4,22 +4,28 @@
     --avatar-size: 32px;
     --background-image: url('https://i.imgur.com/7SbtKvw.png');
     --home-image: url('https://i.imgur.com/233d55Y.gif');
-    --background-solid: rgba(0, 15, 25, 0.6);         /* Increased opacity */
-    --background-solid-dark: rgba(0, 10, 20, 0.55);   /* Increased opacity */
-    --background-solid-darker: rgba(0, 5, 15, 0.5);   /* Increased opacity */
+    --background-solid: rgba(0, 15, 25, 0.6);
+    --background-solid-dark: rgba(0, 10, 20, 0.55);
+    --background-solid-darker: rgba(0, 5, 15, 0.5);
     --accent: 37, 172, 232;
     --accent-alt: 29, 101, 134;
 }
-/* Apply transparent backgrounds to necessary elements */
+/* Apply transparent backgrounds with blur to necessary elements */
 body, .app, .container, .container-3baos1, .layer, .layer-3QrUeG {
     background-color: var(--background-solid-dark) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
 }
 .sidebar, .sidebar-1tnWFu, .channels, .members, .content, .container-2o3qEW {
     background-color: var(--background-solid-darker) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
 }
 /* Additional transparency for specific elements */
 .header, .header-2Mx0tC, .title, .title-3FQ39c {
     background-color: var(--background-solid) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
 }
 /* Remove existing background images */
 body, .app, .container, .container-3baos1, .layer, .layer-3QrUeG,
