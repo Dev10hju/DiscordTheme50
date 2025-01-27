@@ -8,20 +8,54 @@ button {
 
 /* Root Variables */
 
+/* Root Variables - update these values */
 :root {
     --font-primary: 'Karla', sans-serif;
     --font-display: var(--font-primary) !important;
     /* Dark Matter Variables */
     --avatar-size: 32px;
-    --background-image: url('https://i.imgur.com/7SbtKvw.png');
+    --background-image: none;  /* Remove background image for transparency */
     --home-image: url('https://i.imgur.com/233d55Y.gif');
-    --background-solid: rgba(26, 26, 26, 0.6);        /* Dark grey with transparency */
-    --background-solid-dark: rgba(20, 20, 20, 0.55);  /* Darker grey with transparency */
-    --background-solid-darker: rgba(10, 10, 10, 0.5); /* Darkest grey with transparency */
+    --background-solid: rgba(26, 26, 26, 0.3);        /* Dark grey with more transparency */
+    --background-solid-dark: rgba(20, 20, 20, 0.25);  /* Darker grey with more transparency */
+    --background-solid-darker: rgba(10, 10, 10, 0.2); /* Darkest grey with more transparency */
     --accent: 102, 45, 145;                           /* Royal purple */
     --accent-alt: 76, 29, 114;                        /* Darker royal purple */
     --md-black: 0, 0, 0;
     --dm-white: 255, 255, 255;
+}
+
+/* Add these explicit transparency rules */
+body, .app, .container, .container-3baos1, .layer, .layer-3QrUeG {
+    background-color: var(--background-solid-dark) !important;
+}
+
+.sidebar, .sidebar-1tnWFu, .channels, .members, .content, .container-2o3qEW {
+    background-color: var(--background-solid-darker) !important;
+}
+
+.header, .header-2Mx0tC, .title, .title-3FQ39c {
+    background-color: var(--background-solid) !important;
+}
+
+/* Make sure all background images are removed */
+body, .app, .container, .container-3baos1, .layer, .layer-3QrUeG,
+.sidebar, .sidebar-1tnWFu, .channels, .members, .content, .container-2o3qEW,
+.header, .header-2Mx0tC, .title, .title-3FQ39c {
+    background-image: none !important;
+}
+
+/* Keep your blur effect */
+.app-2rEoOp::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
 }
 
 :not(div[class*="userProfile"][class*="unThemed"]).theme-dark,
@@ -234,7 +268,7 @@ div[class^="sidebar-"]>nav>div[class^="searchBar"] {
 	--background-modifier-hover: rgba(var(--dm-white), 0.07);
 	--background-modifier-active: var(--background-modifier-hover);
 	--background-modifier-selected: rgba(var(--dm-white), 0.07);
-    background: rgb(var(--md-black), 0.9);
+    background: rgba(var(--md-black), 0.9);
 }
 
 div[data-list-id^="members-"][class*="scrollerBase-"] {
@@ -294,7 +328,7 @@ div[class^="app-"]>div[class^="bg-"] {
     background-color: transparent;
 }
 div[class*="baseLayer-"]>div[class^="container-"] {
-    background-color: rgb(var(--md-black), 0.4);
+    background-color: rgba(var(--md-black), 0.4);  /* Changed from rgb to rgba */
 }
 
 nav+div [class^='sidebar-'],
@@ -329,7 +363,7 @@ section[class*="themed-"] {
 section[class*="themed-"] {
 	height: 54px;
 	box-shadow: var(--elevation-low);
-    background-color: rgb(var(--md-black), 0.925) !important;
+    background-color: rgba(var(--md-black), 0.925) !important;  /* Changed from rgb to rgba */
 	--background-secondary: rgba(var(--dm-white), 0.1);
 }
 
@@ -742,52 +776,4 @@ div[class^="splashBackground"] img {
 
 div[class*="footerSeparator"] {
 	box-shadow: none !important;
-}
-
-/* Forums */
-.container-3wLKDe {
-    background: var(--background-primary);
-}
-li[class^="card-"]>div[class^="container-"] {
-    background: var(--background-floating)
-}
-
-/* Create a base layer for the blur effect */
-.app-2rEoOp::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    z-index: -1;
-}
-
-/* Apply transparent backgrounds */
-.layers-3iHuyZ, .container-3w7J-x, .chat-3bRxxu, .container-1D34oG {
-    background-color: var(--background-solid-dark) !important;
-}
-
-.sidebar-2K8pFh, .members-1998pB, .channelTextArea-rNsIhG {
-    background-color: var(--background-solid-darker) !important;
-}
-
-.title-3qD0b-, .header-2V-4Sw {
-    background-color: var(--background-solid) !important;
-}
-
-/* Remove existing background images */
-body, .app-2rEoOp, .bg-h5JY_x {
-    background-image: none !important;
-}
-
-/* Enhanced purple highlights for interactive elements */
-.selected-aXhQR6, .modeSelected-346R90 {
-    background-color: rgba(128, 0, 128, 0.3) !important;
-}
-
-.item-2hkk8m:hover {
-    background-color: rgba(147, 112, 219, 0.2) !important;
 }
