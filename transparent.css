@@ -4,13 +4,13 @@
     --avatar-size: 32px;
     --background-image: url('https://i.imgur.com/7SbtKvw.png');
     --home-image: url('https://i.imgur.com/233d55Y.gif');
-    /* Dark grey base with purple tint */
-    --background-solid: rgba(45, 40, 50, 0.6);
-    --background-solid-dark: rgba(35, 30, 40, 0.55);
-    --background-solid-darker: rgba(25, 20, 30, 0.5);
-    /* Purple accent colors */
-    --accent: 147, 112, 219;        /* Light purple */
-    --accent-alt: 103, 58, 183;     /* Deeper purple */
+    /* Much more obvious purple tint in the dark grey */
+    --background-solid: rgba(50, 45, 65, 0.6);         /* Increased purple presence */
+    --background-solid-dark: rgba(40, 35, 55, 0.55);   /* Increased purple presence */
+    --background-solid-darker: rgba(30, 25, 45, 0.5);  /* Increased purple presence */
+    /* More saturated purple accents */
+    --accent: 128, 0, 128;        /* Pure purple */
+    --accent-alt: 147, 112, 219;  /* Light purple */
 }
 
 /* Create a base layer for the blur effect */
@@ -44,11 +44,11 @@ body, .app-2rEoOp, .bg-h5JY_x {
     background-image: none !important;
 }
 
-/* Add purple highlights to interactive elements */
+/* Enhanced purple highlights for interactive elements */
 .selected-aXhQR6, .modeSelected-346R90 {
-    background-color: rgba(147, 112, 219, 0.2) !important;
+    background-color: rgba(128, 0, 128, 0.3) !important;
 }
 
 .item-2hkk8m:hover {
-    background-color: rgba(103, 58, 183, 0.1) !important;
+    background-color: rgba(147, 112, 219, 0.2) !important;
 }
