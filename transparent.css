@@ -17,9 +17,9 @@ button {
     --avatar-size: 32px;
     --background-image: none;  /* Remove background image for transparency */
     --home-image: url('https://i.imgur.com/233d55Y.gif');
-    --background-solid: rgba(26, 26, 26, 0.3);        /* Dark grey with more transparency */
-    --background-solid-dark: rgba(20, 20, 20, 0.25);  /* Darker grey with more transparency */
-    --background-solid-darker: rgba(10, 10, 10, 0.2); /* Darkest grey with more transparency */
+    --background-solid: rgba(26, 26, 26, 0.85);        /* Much less transparent */
+    --background-solid-dark: rgba(20, 20, 20, 0.8);    /* Much less transparent */
+    --background-solid-darker: rgba(10, 10, 10, 0.75); /* Much less transparent */
     --accent: 102, 45, 145;                           /* Royal purple */
     --accent-alt: 76, 29, 114;                        /* Darker royal purple */
     --md-black: 0, 0, 0;
@@ -170,7 +170,7 @@ ul[data-list-id='guildsnav'] {
 	--background-secondary: var(--background-solid);
     	--background-primary: rgba(var(--dm-white), 0.1);
 	margin-bottom: 70px;
-	background-color: rgba(var(--md-black), 0.6);
+	background-color: rgba(var(--md-black), 0.85);
 	border-right: 1px solid rgba(var(--md-black), 0.2);
 	box-shadow: inset -10px 0px 20px -10px rgba(var(--md-black), 0.3);
 }
@@ -269,7 +269,7 @@ div[class^="sidebar-"]>nav>div[class^="searchBar"] {
 	--background-modifier-hover: rgba(var(--dm-white), 0.07);
 	--background-modifier-active: var(--background-modifier-hover);
 	--background-modifier-selected: rgba(var(--dm-white), 0.07);
-    background: rgba(var(--md-black), 0.9);
+    background: rgba(var(--md-black), 0.95);
 }
 
 div[data-list-id^="members-"][class*="scrollerBase-"] {
@@ -329,7 +329,7 @@ div[class^="app-"]>div[class^="bg-"] {
     background-color: transparent;
 }
 div[class*="baseLayer-"]>div[class^="container-"] {
-    background-color: rgba(var(--md-black), 0.4);  /* Changed from rgb to rgba */
+    background-color: rgba(var(--md-black), 0.8);
 }
 
 nav+div [class^='sidebar-'],
@@ -364,7 +364,7 @@ section[class*="themed-"] {
 section[class*="themed-"] {
 	height: 54px;
 	box-shadow: var(--elevation-low);
-    background-color: rgba(var(--md-black), 0.925) !important;  /* Changed from rgb to rgba */
+    background-color: rgba(var(--md-black), 0.95) !important;
 	--background-secondary: rgba(var(--dm-white), 0.1);
 }
 
@@ -475,7 +475,7 @@ div[id^="chat-messages-"]>div[class^="buttonContainer-"] {
 }
 
 div[id^="chat-messages-"] {
-	--background-primary: rgba(var(--md-black), 0.5);
+	--background-primary: rgba(var(--md-black), 0.8);
 }
 
 div[id^="chat-messages-"]>div>[class^="avatar-"] {
